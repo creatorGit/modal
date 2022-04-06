@@ -1,0 +1,90 @@
+.modal-wrap {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  &.visible {
+    pointer-events: initial; 
+    .modal {
+      transform: scale(1);
+      opacity: 1; 
+    }
+    .mask {
+      opacity: 1; 
+    }
+  }
+  .mask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .3s; 
+  }
+  .modal {
+    background: $white;
+    position: relative;
+    transition: all .3s;
+    transform: scale(0.8);
+    opacity: 0;
+    align-items: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+    color: $primary-color;
+    margin: auto;
+    padding: 30px 20px 15px;
+    display: block;
+    height: auto;
+    border-radius: 8px;
+    overflow-y: auto;
+    & > div {
+      height: 100%;
+      &.modal__inner {
+        padding: 20px 10px 30px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+    .crossBtn {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      line-height: 1;
+      color: $grey-color;
+    }
+  }
+}
+
+@include mobile {
+  .modal-wrap {
+    .modal {
+      padding: 20px 20px 15px;
+      & > div {
+        h2 {
+          font-size: 18px;
+        }
+      }
+      .crossBtn {
+        right: 20px;
+        top: 20px;
+      }
+    }
+  }
+}

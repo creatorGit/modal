@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+html {
+ font-size: 16px;
+}
+
+html,
+body {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: $font-noto-sans-jp;
+ font-size: $font-size-base;
+ line-height: $line-height-base;
+ font-weight: $font-weight-base;
+ color: $primary-color;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ overflow-x: hidden;
+ overflow-wrap: break-word;
+ position: relative;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+ display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+
+a {
+ color: inherit;
+ outline: none;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+ border: none;
+ vertical-align: top;
+}
+
+video {
+ max-width: 100%;
+ height: auto;
+}
+
+ul,
+ol {
+ list-style: none;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ width: 100%;
+}
+
+th,
+td {
+ padding: 4px 6px;
+ text-align: left;
+ vertical-align: top;
+}
+
+blockquote,
+q {
+ quotes: none;
+}
+
+blockquote::after,
+blockquote::before,
+q::after,
+q::before {
+ content: "";
+ content: none;
+}
+
+@include mobile {
+ body {
+  font-size: 14px;
+ }
+}
