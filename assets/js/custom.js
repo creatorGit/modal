@@ -1,8 +1,5 @@
 // =============================== Modals =================================
 $(document).ready(function(){
-
-  $('.modal__inner').fadeOut();
-
   $('.modal-view-btn').on('click', function(){
     $('#modal').addClass('visible');
   });
