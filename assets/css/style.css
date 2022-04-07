@@ -185,6 +185,7 @@ q::before {
 }
 .modal-wrap.visible .mask {
   opacity: 1;
+  cursor: pointer;
 }
 .modal-wrap .mask {
   height: 100%;
@@ -207,7 +208,7 @@ q::before {
   box-sizing: border-box;
   color: #333;
   margin: auto;
-  padding: 30px 20px 15px;
+  padding: 15px 20px;
   display: block;
   height: auto;
   border-radius: 8px;
@@ -217,11 +218,15 @@ q::before {
   height: 100%;
 }
 .modal-wrap .modal > div.modal__inner {
-  padding: 20px 10px 30px;
+  padding: 20px 10px;
 }
 .modal-wrap .modal > div h2 {
   font-size: 20px;
   margin-bottom: 15px;
+}
+.modal-wrap .modal .close-btn {
+  cursor: pointer;
+  margin-top: 15px;
 }
 .modal-wrap .modal .crossBtn {
   position: absolute;
@@ -232,9 +237,10 @@ q::before {
   background-color: transparent;
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
   color: #969696;
+  cursor: pointer;
 }
 
 @media (min-width: 240px) and (max-width: 767px) {
@@ -248,4 +254,10 @@ q::before {
     right: 20px;
     top: 20px;
   }
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */

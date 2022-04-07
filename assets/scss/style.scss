@@ -3,3 +3,10 @@
 @import "object/utility/utility";
 @import "object/project/project";
 @import "object/component/component";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
