@@ -1,7 +1,8 @@
 // =============================== Modals =================================
 $(document).ready(function(){
   $('.modal-view-btn').on('click', function(){
-    $('#modal').addClass('visible');
+    var target = $(this).attr('data-target');
+    $(target).addClass('visible');
   });
 
   $('.mask').on('click', function(){
